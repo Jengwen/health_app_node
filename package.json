@@ -15,9 +15,11 @@
     "express": "^4.17.1",
     "joi": "^14.3.1",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "rsync": "^0.6.1"
   },
   "devDependencies": {
+    "flightplan": "^0.6.20",
     "fly": "^4.1.4"
   }
 }
