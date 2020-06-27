@@ -1,9 +1,10 @@
 var plan = require('flightplan');
 
 
+
 var appName = 'healthapp';
 var username = 'deploy';
-var startFile = 'bin/server.js';
+var startFile = 'server.js';
 
 var tmpDir = appName+'-' + new Date().getTime();
 
@@ -56,5 +57,4 @@ plan.remote(function(remote) {
   remote.sudo('ln -snf ~/' + tmpDir + ' ~/'+appName, {user: username});
   remote.exec('forever stop ~/'+appName+'/'+startFile, {failsafe: true});
   remote.exec('forever start ~/'+appName+'/'+startFile);
-  
 });
