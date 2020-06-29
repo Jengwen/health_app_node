@@ -2,7 +2,7 @@ var plan = require('flightplan');
 
 
 
-var appName = 'healthapp';
+var appName = 'Health_Api_Node';
 var username = 'deploy';
 var startFile = 'server.js';
 
