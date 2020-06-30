@@ -18,11 +18,11 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Employee Health" });
 });
 
-require("./routes/unitRoute")(app);
-require("./routes/accountRoute")(app);
-require("./routes/employeeRoute")(app);
-require("./routes/recordRoute")(app);
-require("./routes/applicationUserRoute")(app);
+require("./server/routes/unitRoute")(app);
+require("./server/routes/accountRoute")(app);
+require("./server/routes/employeeRoute")(app);
+require("./server/routes/recordRoute")(app);
+require("./server/routes/applicationUserRoute")(app);
 
 app.listen(process.env.PORT || 3000, ()=>{
     console.log(`server is running on port; ${process.env.PORT || 3000}`);
