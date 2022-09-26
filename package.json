@@ -22,6 +22,6 @@
   },
   "devDependencies": {
     "flightplan": "^0.6.20",
-    "fly": "^4.1.4"
+    "fly": "^4.3.17"
   }
 }
